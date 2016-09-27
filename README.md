@@ -19,5 +19,5 @@ Although Kontalk works in the XMPP federated network, requesting a link with the
 
 ## Web of Trust
 
-The final aim of the project is to create a network managed by a community of servers, founded by volunteers, with an automatic network management system. Of course this is not an easy task, we need contributions from all of you. Even some shared thoughts can be of great help. You can join discussions on [kontalk-devel@googlegroups.com](https://groups.google.com/d/forum/kontalk-devel).
+The final aim of the project is to create a network managed by a community of servers, founded by volunteers, with an automatic network management system. Of course this is not an easy task, we need contributions from all of you. Even some shared thoughts can be of great help. You can join discussions on [kontalk-devel@googlegroups.com](https://groups.google.com/d/forum/kontalk-devel).  
 *We will soon draft a paper on this concepts and publish it here.*
