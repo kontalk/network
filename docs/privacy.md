@@ -31,3 +31,5 @@ The Google Play version of the Android app uses Fabric ([Crashlytics](https://tr
 * App version
 * Device brand and model
 * Android version
+
+A user preference in the app will allow the user to opt-out.
