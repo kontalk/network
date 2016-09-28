@@ -1,7 +1,7 @@
 Privacy policy
 ==============
 
-This is the privacy policy for the kontalk.net network (the default network clients will connect to).
+This is the privacy policy for the Kontalk Public Network (the default network clients will connect to).
 
 Phone numbers
 =============
@@ -23,8 +23,8 @@ Public keys are stored on the servers. Public key access is allowed to a user if
 
 Private keys are stored in the client device and in the device only. You can choose to export it to a zip file that can be moved to another device for backup or import. Although the keys in the zip file are encrypted, we recommend to minimize movements through the wire at the minimum possible.
 
-Crash reporting/Analytics
-=========================
+Crash reporting/Analytics (Android only)
+========================================
 The Google Play version of the Android app uses Fabric ([Crashlytics](https://try.crashlytics.com/terms/)+[Answers](https://answers.io/privacy)) to collect statistical data from the app usage and automatic reports of crashes. Information sent with crash reports includes:
 
 * Exception stacktrace
