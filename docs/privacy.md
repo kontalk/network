@@ -25,7 +25,7 @@ Private keys are stored in the client device and in the device only. You can cho
 
 Crash reporting/Analytics
 =========================
-The Google Play version of the Android app uses Fabric ([Crashlytics](https://try.crashlytics.com/terms/)+[Answers](https://answers.io/privacy)) to collect statistical data from the app usage and automatic reports of crashes. Information reported with crash reports include:
+The Google Play version of the Android app uses Fabric ([Crashlytics](https://try.crashlytics.com/terms/)+[Answers](https://answers.io/privacy)) to collect statistical data from the app usage and automatic reports of crashes. Information sent with crash reports includes:
 
 * Exception stacktrace
 * App version
