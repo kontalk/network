@@ -11,8 +11,8 @@ da sie verifiziert werden muss. Dies geschiet mittels eines Verifizierungs-Codes
 (z. B. eine PIN) der durch eine SMS oder einen Telefonanruf übermittelt wird und durch den Nutzer an 
 den Server zurückgegeben wird.
 Wir speichern die Telefonnummer in keiner Weise (außer in Protokollen, siehe weiter unten).
-Unsere Verifizierungsanbieter ([Nexmo] (https://www.nexmo.com/) und
-[JMP.Chat] (https://jmp.chat/) lesen sie deren Datenschutzrichtlinien auf den
+Unsere Verifizierungsanbieter (namentlich [Nexmo](https://www.nexmo.com/) und
+[JMP.Chat](https://jmp.chat/) lesen sie deren Datenschutzrichtlinien auf den
 jeweiligen Webseiten), speichern aller verifizierten Telefonnummern für einige
 Zeit. 
 Wir greifen auf diese Protokolle nur zu, wenn bei der Registrierung von Benutzern Probleme auftreten.
@@ -30,7 +30,7 @@ und werden anschließend wieder vom Server gelöscht.
 
 Freunde-Liste
 =============
-Chat Einladungen und der Sperrstatus wird in einer Nutzerliste des Servers gespeichert.
+Chat Einladungen und der Sperrstatus werden in einer Nutzerliste des Servers gespeichert.
 
 Kryptologische Schlüssel
 ========================
@@ -40,7 +40,7 @@ erst dann möglich wenn der angefragte Nutzer die Einladung angenommen hat.
 Private Schlüssel werden ausschließlich auf dem Endgerät gespeichert.
 Sie können mit der Exportfunktion ein Backup (zip-Datei) des Schlüssels erstellen welches auch auf einem
 anderen Gerät importiert werden kann.
-Obwohl die Schlüssel in der zip-Datei verschlüsselt sind empfehlen wir sehr vorsichtig damit zu sein.
+Obwohl die Schlüssel in der zip-Datei verschlüsselt sind, empfehlen wir sehr vorsichtig damit zu sein.
 
 Nachrichten
 ===========
@@ -67,7 +67,7 @@ Crash Report/Analyse (Nur Android)
 ==================================
 
 Die Google Play-Version der Android App verwendet Fabric
-([Crashlytics] (https://try.crashlytics.com/terms/) + [Antworten] (https://answers.io/privacy))
+([Crashlytics](https://try.crashlytics.com/terms/) + [Antworten](https://answers.io/privacy))
 um statistische Daten aus der App-Nutzung und automatische Berichte von Abstürzen zu sammeln.
 Zu den mit Absturzberichten gesendeten Informationen gehören:
 
