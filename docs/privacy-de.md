@@ -1,7 +1,7 @@
 This file is work in progress
 
 Datenschutz-Bestimmungen
-==============
+========================
 
 Dies ist die Datenschutzrichtlinie für das öffentliche Kotalk-Netzwerk 
 (das Standardnetzwerk mit dem sich die Clients verbinden).
@@ -19,48 +19,43 @@ jeweiligen Webseiten), speichern aller verifizierten Telefonnummern für einige
 Zeit. 
 Wir greifen auf diese Protokolle nur zu, wenn bei der Registrierung von Benutzern Probleme auftreten.
 
-Phone numbers in the messaging protocol itself are exchanged in an irreversible
-hashed form (SHA-1), hiding the real phone number from the most basic attack.
-However, recent technological development made possible brute-force attacks that
-can be used to reverse a hash in a matter of hours.
-
-Telefonnummern im Messaging-Protokoll selbst werden ausschließsich in gehashter Form (SHA-1) verwendet
+Telefonnummern im Messaging-Protokoll selbst werden ausschließsich in gehashter Form (SHA-1) verwendet.
 Die echte Telefonnummer wird vor den meisten grundlegenden Angriffen versteckt.
-Allerdings ist es beim aktuellen technischen Stand möglich mittels Brute-Force-Angriffen den 
+Allerdings ist es beim aktuellen technischen Stand möglich mittels eines Brute-Force-Angriffs den 
 originalen Wert (Telefonnumer) innerhalb von Stunden aus dem Hash-Wert zu errechnen.
 
-Contacts matching
-=================
-When a contact refresh is triggered, all phone numbers stored in the user's
-address book are hashed and sent to the server. The hashed phone numbers are
-used to look for other registered users in the network and then discarded.
+Kontakt-Abgleich
+================
+Wenn eine Kontaktaktualisierung ausgelöst wird, werden alle Telefonnummern im lokalen Adressnbuch gehasht und
+an den Server gesendet. Die Hash-Werte der Telefonnummern werden verwendet um registrierte Kontalk-Nutzer zu finden
+und werden anschließend wieder vom Server gelöscht.
 
-Buddy list
-==========
-Chat invitation and blocked status lists are stored on the user's server roster.
+Freunde-Liste
+=============
+Chat Einladungen und der Sperrstatus wird in einer Nutzerliste des Servers gespeichert.
 
-Encryption keys
-===============
-Public keys are stored on the servers. Public key access is allowed to a user if
-the requested user has accepted the chat invitation.
+Kryptologische Schlüssel
+========================
+Öffentliche Schlüssel werden auf dem Server gespeichert. Der Zugriff auf den öffentlichen Schlüssel ist
+erst dann möglich wenn der angefragte Nutzer die Einladung angenommen hat.
 
-Private keys are stored in the client device and in the device only. You can
-choose to export it to a zip file that can be moved to another device for backup
-or import. Although the keys in the zip file are encrypted, we recommend to
-minimize movements through the wire at the minimum possible.
+Private Schlüssel werden ausschließlich auf dem Endgerät gespeichert.
+Sie können mit der Exportfunktion ein Backup (zip-Datei) des Schlüssels erstellen welches auch auf einem
+anderen Gerät importiert werden kann.
+Obwohl die Schlüssel in der zip-Datei verschlüsselt sind empfehlen wir sehr vorsichtig damit zu sein.
 
-Messages
-========
-Messages are stored on the recipient's server until they are delivered and
-acknowledged by the recipient's client. After correct delivery, messages are
-deleted immediately and permanently.
+Nachrichten
+===========
+Nachrichten werden auf dem Server des Empfängers gespeichert bis sie ausgeliefert und vom Client des
+Empfängers bestätigt wurden. Nach der korrekten Übermittlung werden die Nachrichten sofort und entgültig
+vom Server gelöscht.
 
-User data removal
-==================
-All user data will be automatically deleted from the server if the user doesn't
-access the service for 30 days.
+Benutzerdaten entfernen
+=======================
+Alle Benutzerdaten werden automatisch gelöscht wenn der Nutzer seit 30 Tagen keinen Serverzugang hatte.
+Z.B. nachdem die Kontalk App vom Gerät gelöscht wurde.
 
-Server logs
+Server Logs
 ===========
 Server instances keep a log of various operations happening inside the server,
 including: IP addresses, phone number registration requests (including the phone
