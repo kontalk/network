@@ -10,21 +10,21 @@ Die echte Telefonnummer des Benutzers muss während der Registrierungsphase ange
 da sie verifiziert werden muss. Dies geschiet mittels eines Verifizierungs-Codes 
 (z. B. eine PIN) der durch eine SMS oder einen Telefonanruf übermittelt wird und durch den Nutzer an 
 den Server zurückgegeben wird.
-Wir speichern Sie die Telefonnummer in keiner Weise (außer in Protokollen, siehe weiter unten).
+Wir speichern die Telefonnummer in keiner Weise (außer in Protokollen, siehe weiter unten).
 Unsere Verifizierungsanbieter ([Nexmo] (https://www.nexmo.com/) und
 [JMP.Chat] (https://jmp.chat/) lesen sie deren Datenschutzrichtlinien auf den
 jeweiligen Webseiten), speichern aller verifizierten Telefonnummern für einige
 Zeit. 
 Wir greifen auf diese Protokolle nur zu, wenn bei der Registrierung von Benutzern Probleme auftreten.
 
-Telefonnummern im Messaging-Protokoll selbst werden ausschließsich in gehashter Form (SHA-1) verwendet.
+Telefonnummern im Messaging-Protokoll selbst, werden ausschließsich in gehashter Form (SHA-1) verwendet.
 Die echte Telefonnummer wird vor den meisten grundlegenden Angriffen versteckt.
 Allerdings ist es beim aktuellen technischen Stand möglich mittels eines Brute-Force-Angriffs den 
 originalen Wert (Telefonnumer) innerhalb von Stunden aus dem Hash-Wert zu errechnen.
 
 Kontakt-Abgleich
 ================
-Wenn eine Kontaktaktualisierung ausgelöst wird, werden alle Telefonnummern im lokalen Adressnbuch gehasht und
+Wenn eine Kontaktaktualisierung ausgelöst wird, werden alle Telefonnummern im lokalen Adressbuch gehasht und
 an den Server gesendet. Die Hash-Werte der Telefonnummern werden verwendet um registrierte Kontalk-Nutzer zu finden
 und werden anschließend wieder vom Server gelöscht.
 
@@ -56,14 +56,15 @@ Z.B. nachdem die Kontalk App vom Gerät gelöscht wurde.
 Server Logs
 ===========
 Server-Instanzen protokollieren verschiedene Vorgänge im Server.
-Das schließt ein: IP-Adressen, Anfragen zur Registrierung von Telefonnummern (einschließlich der Telefonnummer selbst),
-Metadaten von Nachrichten, die ausgetauscht werden (aber nicht deren Inhalt,sondern
-lediglich Absender/Adressat und Zeitstempel).
+Das schließt ein: 
+IP-Adressen, Anfragen zur Registrierung von Telefonnummern (einschließlich der Telefonnummer selbst),
+Metadaten von Nachrichten, die ausgetauscht werden 
+(aber nicht deren Inhalt,sondern lediglich Absender/Adressat und Zeitstempel).
 
 Logdateien rotieren alle paar Stunden und dadurch werden gespeicherte Informationen inerhalb von ein paar Tagen überschrieben).
 
 Crash Report/Analyse (Nur Android)
-========================================
+==================================
 
 Die Google Play-Version der Android App verwendet Fabric
 ([Crashlytics] (https://try.crashlytics.com/terms/) + [Antworten] (https://answers.io/privacy))
@@ -76,3 +77,8 @@ Zu den mit Absturzberichten gesendeten Informationen gehören:
 * Android-Version
 
 Eine Benutzereinstellung in der App ermöglicht dem Benutzer das Abwählen  der Protokollierung.
+
+Disclaimer
+==========
+Ich habe das [Originaldokument](https://github.com/kontalk/network/blob/master/docs/privacy.md) nach bestem Wissen und
+Gewissen übersetzt. Fehler sind dennoch nicht ausgeschlossen.
