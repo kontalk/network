@@ -1,5 +1,3 @@
-This file is work in progress
-
 Datenschutz-Bestimmungen
 ========================
 
@@ -57,24 +55,24 @@ Z.B. nachdem die Kontalk App vom Gerät gelöscht wurde.
 
 Server Logs
 ===========
-Server instances keep a log of various operations happening inside the server,
-including: IP addresses, phone number registration requests (including the phone
-number itself), metadata of messages being exchanged (but not their content,
-that is only from-to information and timestamps).
+Server-Instanzen protokollieren verschiedene Vorgänge im Server.
+Das schließt ein: IP-Adressen, Anfragen zur Registrierung von Telefonnummern (einschließlich der Telefonnummer selbst),
+Metadaten von Nachrichten, die ausgetauscht werden (aber nicht deren Inhalt,sondern
+lediglich Absender/Adressat und Zeitstempel).
 
-Logs are rotated every few hours and any information stored in the logs usually
-goes away (rotated out, thus deleted) in a couple of days.
+Logdateien rotieren alle paar Stunden und dadurch werden gespeicherte Informationen inerhalb von ein paar Tagen überschrieben).
 
-Crash reporting/Analytics (Android only)
+Crash Report/Analyse (Nur Android)
 ========================================
-The Google Play version of the Android app uses Fabric
-([Crashlytics](https://try.crashlytics.com/terms/)+[Answers](https://answers.io/privacy))
-to collect statistical data from the app usage and automatic reports of crashes.
-Information sent with crash reports includes:
 
-* Exception stacktrace
-* App version
-* Device brand and model
-* Android version
+Die Google Play-Version der Android App verwendet Fabric
+([Crashlytics] (https://try.crashlytics.com/terms/) + [Antworten] (https://answers.io/privacy))
+um statistische Daten aus der App-Nutzung und automatische Berichte von Abstürzen zu sammeln.
+Zu den mit Absturzberichten gesendeten Informationen gehören:
 
-A user preference in the app will allow the user to opt-out.
+* Exception stacktrace (Fehlermeldung)
+* App Version
+* Gerätemarke und -modell
+* Android-Version
+
+Eine Benutzereinstellung in der App ermöglicht dem Benutzer das Abwählen  der Protokollierung.
