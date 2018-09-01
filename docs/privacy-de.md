@@ -6,22 +6,28 @@ Datenschutz-Bestimmungen
 Dies ist die Datenschutzrichtlinie für das öffentliche Kotalk-Netzwerk 
 (das Standardnetzwerk mit dem sich die Clients verbinden).
 
-Phone numbers
-=============
-The real phone number of the user must be provided during the registration phase
-because it needs to be verified through a SMS or a phone call by providing some
-challenge code (e.g. a PIN) that the user must supply back to the server. We
-don't store the phone number in any way (except in logs, see later), however our
-verification providers (namely [Nexmo](https://www.nexmo.com/) and
-[JMP.Chat](https://jmp.chat/), you can view their privacy policies in the
-respective web sites) do keep a record of all verified phone numbers for some
-time. We access those logs only when supporting users having issues during
-registration.
+Telefonnummern
+==============
+Die echte Telefonnummer des Benutzers muss während der Registrierungsphase angegeben werden
+da sie verifiziert werden muss. Dies geschiet mittels eines Verifizierungs-Codes 
+(z. B. eine PIN) der durch eine SMS oder einen Telefonanruf übermittelt wird und durch den Nutzer an 
+den Server zurückgegeben wird.
+Wir speichern Sie die Telefonnummer in keiner Weise (außer in Protokollen, siehe weiter unten).
+Unsere Verifizierungsanbieter ([Nexmo] (https://www.nexmo.com/) und
+[JMP.Chat] (https://jmp.chat/) lesen sie deren Datenschutzrichtlinien auf den
+jeweiligen Webseiten), speichern aller verifizierten Telefonnummern für einige
+Zeit. 
+Wir greifen auf diese Protokolle nur zu, wenn bei der Registrierung von Benutzern Probleme auftreten.
 
 Phone numbers in the messaging protocol itself are exchanged in an irreversible
 hashed form (SHA-1), hiding the real phone number from the most basic attack.
 However, recent technological development made possible brute-force attacks that
 can be used to reverse a hash in a matter of hours.
+
+Telefonnummern im Messaging-Protokoll selbst werden ausschließsich in gehashter Form (SHA-1) verwendet
+Die echte Telefonnummer wird vor den meisten grundlegenden Angriffen versteckt.
+Allerdings ist es beim aktuellen technischen Stand möglich mittels Brute-Force-Angriffen den 
+originalen Wert (Telefonnumer) innerhalb von Stunden aus dem Hash-Wert zu errechnen.
 
 Contacts matching
 =================
