@@ -4,7 +4,7 @@ Kontalk Public Network server list
 Our network is still small, but we are looking for support from the community or sponsorships. Our aim is to build a network made up of several servers working together to create a distributed network which will be able to handle load balancing and failover.
 
 ### Beta `beta.kontalk.net`
-[![xmpp.net score](/data/beta_xmpp.net.png)](https://xmpp.net/result.php?domain=beta.kontalk.net&type=client)
+[![xmpp.net score](https://xmpp.net/badge.php?domain=beta.kontalk.net)](https://xmpp.net/result.php?domain=beta.kontalk.net&type=client)
 
 This is where most of the updates from the server software pass before being distributed to the network. It's a VPS hosted at [DigitalOcean](https://digitalocean.com/), it's owned by the Kontalk devteam and it's funded by donations. It also hosts both Kontalk websites.
 
